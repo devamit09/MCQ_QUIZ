@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>OSSSC Exam 2015</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-wrapper">
+        <div class="quiz-container">
+            <h1>OSSSC RI,ARI & AMIN 2015</h1>
+            <h3>PAPER-1 (General Knowledge)</h3>
+            <div class="quiz-header">
+                <span class="question-count">Question 1 of 100</span>
+                <span class="timer">Time: 00:00</span>
+            </div>
+            
+            <div class="question-container">
+                <div id="question" class="question"></div>
+                <div id="options" class="options"></div>
+            </div>
+            
+            <div class="navigation">
+                <button id="prev-btn" class="nav-btn">Previous</button>
+                <button id="next-btn" class="nav-btn">Next</button>
+                <button id="submit-btn" class="submit-btn">Submit Quiz</button>
+                <button id="exit-btn" class="exit-btn">Exit Quiz</button>
+            </div>
+            
+            <div id="result" class="result-container"></div>
+        </div>
+
+        <div class="progress-sidebar">
+            <div class="progress-header">
+                <h3>Quiz Progress</h3>
+            </div>
+            <div class="progress-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Total Questions:</span>
+                    <span id="total-questions" class="stat-value">100</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Answered:</span>
+                    <span id="answered-questions" class="stat-value">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Remaining:</span>
+                    <span id="remaining-questions" class="stat-value">100</span>
+                </div>
+            </div>
+            <div class="progress-grid" id="progress-grid">
+                <!-- Questions will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <img src="images/logo.jpeg" alt="Small Logo" class="footer-logo">
+        <p>© 2025 Quiz App. All rights reserved.</p>
+        <p>Created with ❤️ for OSSSC aspirants by AKS</p>
+    </footer>
+
+    <script src="quiz-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
